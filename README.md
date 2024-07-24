@@ -35,7 +35,7 @@
   helm upgrade --install  app-02 tibco/chart/ -n stg \
   -f tibco/chart/app-02/values.yaml \
   -f tibco/environments/stg-values.yaml \
-  -f tibco/chart/app-01/environments/stg-values.yaml \
+  -f tibco/chart/app-02/environments/stg-values.yaml \
   --set appNameGeneric=app-02 \
   --set appName=app-02
 

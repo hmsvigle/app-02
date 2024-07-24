@@ -3,16 +3,16 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
-appName: app-01
-appNameGeneric: app-01
-configmapPath: "../apps/app-01/configmap.yaml"  # Updated path
+appName: app-02
+appNameGeneric: app-02
+configmapPath: "../apps/app-02/configmap.yaml"  # Updated path
 
 
 image:
-  repository: nginx
+  repository: hmsvigle/nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "02"
 
 service:
   type: ClusterIP
